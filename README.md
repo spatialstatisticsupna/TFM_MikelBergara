@@ -40,15 +40,27 @@ El código de R correspondiente a los capítulos 3 y 4 del trabajo, se divide en
 
 -[**Auxiliares.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Auxiliares.R)
 
+Este primer script define tres funciones auxiliares ("**validation_subsets**", "**fit_model**" y "**validate_model**") que serán de utilidad en el resto de scripts para ajustar modelos espacio-temporales, además de facilitar la creación un proceso de validación para realizar predicciones a corto plazo.
+
 -[**Bases_modelos.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Bases_modelos.R)
+
+Este script nos permite crear y simplificar las bases de datos que se utilizarán para ajustar los modelos, partiendo de los conjuntos de datos iniciales presentados anteriormente. Se obtiene también la matriz de estructura espacial partiendo de la matriz de adyacencia binaria.
 
 -[**Analisis_Descriptivo.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Analisis_Descriptivo.R)
 
+Este script presenta el análisis descriptivo realizado utilizando diferentes tipos de cáncer, para datos de incidencia y mortalidad. En concreto, el análisis realizado se divide en tres secciones: patrón espacial, patrón temporal y patrón espacio-temporal.
+
 -[**ModelosEspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ModelosEspacioTemporales.R)
+
+Este script reproduce el ajuste de los 8 modelos espacio-temporales (utilizando los datos de incidencia del cáncer de estómago en hombres) mediante el uso de INLA. Además, se crea una tabla de medidas de validación mediante la cual se seleccionan los dos mejores modelos. Finalmente, se muestran los resultados obtenidos para estos dos últimos modelos (distribuciones a posteriori para el intercepto e hiperparámetros, junto a la representación cartográfica de las tasas estimadas).
 
 -[**ValidationProcess.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ValidationProcess.R)
 
+Este script simula el proceso de validación y predicción desarrollado en el capítulo 4. Primero, se crean diferentes subconjuntos de validación partiendo del periodo completo 2001-2017, y después se ajustan a cada uno de ellos los 4 modelos BYM definidos en el capítulo 3. Se utilizan diferentes medidas de validación para determinar el mejor de los modelos respecto a su capacidad predictiva, y se realizan predicciones de tasas de incidencia de cáncer de estómago a corto plazo (se predicen los años 2018, 2019 y 2020). 
+
 -[**ReduccionCostes.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ReduccionCostes.R)
+
+Este script desarrolla el método de reducción de costes (en lo referente al proceso de validación) definido en la sección 4.2 del capítulo 4. Se realizan las comprobaciones necesarias para determinar que la metodología empleada es válida, y se calculan los tiempos de ejecución de todos los modelos ajustados a cada subconjunto de validación.
 
 
 # Agradecimientos
@@ -56,31 +68,6 @@ Este Trabajo Fin de Máster ha sido realizado bajo la financiación de las Ayuda
 
 
 
-# Datos
-
-Esta carpeta contiene los ficheros con los que se ha realizado el tercer capítulo del trabajo, en el que se ilustra el funcionamiento de los modelos con los datos reales de cáncer.
-
-- [**Datos_gb_f.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_f.csv) y [**Datos_gb_m.csv**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Datos_gb_m.csv)
-
-  Bases de datos de incidencia y mortalidad po cáncer en la isla de Gran Bretaña para 11 causas (leucemia, mama, cérvix, melanoma, hígado, colorrectal, páncreas, estómago, pulmón, vejiga y esófago) desagregadas por área y año. Cada fichero contiene las siguientes variables:
-  
-    - **_Code_**: código identificador del área (S=142 regiones)
-    - **_Year_**: identificador del año (periodo 2002-2019)
-    - **_Population_**: población en riesgo
-    - **_Count_All_**: número total de casos registrados
-    - **_Deaths_All_**: número total de muertes registradas
-    - **_Count_xxx_**: número total de casos registrados para cada una de las 11 causas 
-    - **_Deaths_xxx_**: número total de muertes registradas para cada una de las 11 causas
-
-  _*Fuente de datos_: Sistema nacional de salud para Inglaterra [(NHS England)](https://www.cancerdata.nhs.uk/incidence_and_mortality), Gales [(NHS Wales)](https://phw.nhs.wales/services-and-teams/welsh-cancer-intelligence-and-surveillance-unit-wcisu/) y Escocia [(NHS Scotland)](https://www.opendata.nhs.scot/dataset).
-  
-- [**Carto**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/)
-
-  Esta carpeta contiene la cartografía (archivos _shapefile_) de las regiones de Gran Bretaña (106 _clinical commissioning group0s_ para Inglaterra, 22 _local authorities_ para Gales y 14 _health boards_ para Escocia), además de la matriz de adyacencia espacial.
-  
-- [**adj_bg.txt**](https://github.com/spatialstatisticsupna/TFM_AnderBodegas/blob/main/Datos/Carto/adj_gb.txt)
-
-  Este archivo contiene la matriz de adyacencia (binaria) correspondiente al grafo de vecindad de las 142 regiones bajo estudio. El grafo original ha sido modificado (se han añadido 9 conexiones extra) para conectar las islas y así obtener un grafo conexo.
 
 
 
