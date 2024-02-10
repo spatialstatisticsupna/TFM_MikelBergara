@@ -4,9 +4,9 @@ Este repositorio contiene el código R utilizado para reproducir y replicar el a
 
 ## Índice
 
-- Datos
-- Código R
-- Agradecimientos
+- [Datos](#Datos)
+- [Código R](#Código-r)
+- [Agradecimientos](#Agradecimientos)
 
 # Datos
 
