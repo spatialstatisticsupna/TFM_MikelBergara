@@ -36,6 +36,21 @@ _*Fuente de datos_: Sistema nacional de salud para Inglaterra [(NHS England)](ht
 
 # Código R
 
+El código de R correspondiente a los capítulos 3 y 4 del trabajo, se divide en los siguientes scripts:
+
+-[**Auxiliares.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Auxiliares.R)
+
+-[**Bases_modelos.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Bases_modelos.R)
+
+-[**Analisis_Descriptivo.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Analisis_Descriptivo.R)
+
+-[**ModelosEspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ModelosEspacioTemporales.R)
+
+-[**ValidationProcess.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ValidationProcess.R)
+
+-[**ReduccionCostes.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ReduccionCostes.R)
+
+
 # Agradecimientos
 Este Trabajo Fin de Máster ha sido realizado bajo la financiación de las Ayudas de Iniciación a la Investigación de la Universidad Pública de Navarra en el ámbito de sus institutos de Investigación durante el curso académico 2022-2023 ([resolución 2359/2022](https://www2.unavarra.es/gesadj/sede/INVESTIGACION2022/RES2359_Iniciacion22-23.pdf)).
 
