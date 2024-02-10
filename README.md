@@ -22,7 +22,7 @@ Esta carpeta contiene los archivos _shapefile_ (cartografía inglesa) utilizados
 
 -[**England_database.Rdata**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/Datos/England_database.Rdata)
 
-Este archivo contiene tres objetos. Por un lado, una base de datos de la población inglesa (**Pop**) desagregada por año de estudio (2001-2020), región (105 _clinical commissioning groups_) sexo y edad. Por otro lado, las dos bases de datos correspondientes a la incidencia y mortalidad (**Inci** y **Mort**) por cáncer desagregadas tal que cada base cuenta con las siguientes columnas:
+Este archivo contiene tres objetos. Por un lado, una base de datos de la población inglesa ("**Pop**") desagregada por año de estudio (2001-2020), región (105 _clinical commissioning groups_) sexo y edad. Por otro lado, las dos bases de datos correspondientes a la incidencia y mortalidad ("**Inci**" y "**Mort**") por cáncer desagregadas tal que cada base cuenta con las siguientes columnas:
 
     - **_Year_**: año de estudio (periodo 2001-2020)
     - **_Gender_**: sexo del individuo
