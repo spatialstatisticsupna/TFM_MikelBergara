@@ -46,19 +46,19 @@ Este primer script define tres funciones auxiliares ("**validation_subsets**", "
 
 Este script nos permite crear y simplificar las bases de datos que se utilizarán para ajustar los modelos, partiendo de los conjuntos de datos iniciales presentados anteriormente. Se obtiene también la matriz de estructura espacial partiendo de la matriz de adyacencia binaria.
 
-- [**Analisis_Descriptivo.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Analisis_Descriptivo.R)
+- [**Analisis_descriptivo.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Analisis_descriptivo.R)
 
 Este script presenta el análisis descriptivo realizado utilizando diferentes tipos de cáncer, para datos de incidencia y mortalidad. En concreto, el análisis realizado se divide en tres secciones: patrón espacial, patrón temporal y patrón espacio-temporal.
 
-- [**ModelosEspacioTemporales.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ModelosEspacioTemporales.R)
+- [**Modelos_espaciotemporales.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Modelos_espaciotemporales.R)
 
 Este script reproduce el ajuste de los 8 modelos espacio-temporales (utilizando los datos de incidencia del cáncer de estómago en hombres) mediante el uso de INLA. Además, se crea una tabla de medidas de validación mediante la cual se seleccionan los dos mejores modelos. Finalmente, se muestran los resultados obtenidos para estos dos últimos modelos (distribuciones a posteriori para el intercepto e hiperparámetros, junto a la representación cartográfica de las tasas estimadas).
 
-- [**ValidationProcess.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ValidationProcess.R)
+- [**Proceso_validacion.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Proceso_validacion.R)
 
 Este script simula el proceso de validación y predicción desarrollado en el capítulo 4. Primero, se crean diferentes subconjuntos de validación partiendo del periodo completo 2001-2017, y después se ajustan a cada uno de ellos los 4 modelos BYM definidos en el capítulo 3. Se utilizan diferentes medidas de validación para determinar el mejor de los modelos respecto a su capacidad predictiva, y se realizan predicciones de tasas de incidencia de cáncer de estómago a corto plazo (se predicen los años 2018, 2019 y 2020). 
 
-- [**ReduccionCostes.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/ReduccionCostes.R)
+- [**Mejora_coste_computacional.R**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/R/Mejora_coste_computacional.R)
 
 Este script desarrolla el método de reducción de costes (en lo referente al proceso de validación) definido en la sección 4.2 del capítulo 4. Se realizan las comprobaciones necesarias para determinar que la metodología empleada es válida, y se calculan los tiempos de ejecución de todos los modelos ajustados a cada subconjunto de validación.
 
