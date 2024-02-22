@@ -10,7 +10,7 @@ Este repositorio contiene el código R utilizado para reproducir y replicar el a
 
 # Datos
 
-Esta carpeta contiene los ficheros con datos reales de cáncer necesarios para realizar el análisis práctico de los capítulos 3 y 4 del trabajo, es decir, el análisis descriptivo, la modelización espacio-temporal y el desarrollo del método de validación y predicción realizado mediante el uso de datos oficiales de Inglaterra. 
+Esta carpeta contiene los ficheros con datos reales de cáncer empleados para llevar a cabo los procedimientos descritos en los Capítulos 3 y 4, es decir, el análisis descriptivo, la modelización espacio-temporal y el desarrollo del método de validación y predicción de la incidencia y mortalidad por cáncer.
 
 - [**Carto_England.Rdata**](https://github.com/spatialstatisticsupna/TFM_MikelBergara/blob/main/Datos/Carto_England.Rdata)
 
